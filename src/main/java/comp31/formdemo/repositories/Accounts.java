@@ -18,6 +18,13 @@ public class Accounts extends ArrayList<Employee> {
     }
 
     // TODO add findByDepartment
-    // TODO add findAllEmployees
+
+    public ArrayList<Employee> findAllEmployees() {
+        ArrayList<Employee> employees = new ArrayList<Employee>(); //creating a new arrayList object
+        for (Employee employee : this) { //adding all Employees to the new arrayList
+            employees.add(employee);
+        }
+        return employees;
+    }
 
 }
